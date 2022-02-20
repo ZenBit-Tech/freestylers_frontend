@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const App: React.FC = () => {
-  return <h1>Hello</h1>;
+  return (
+    <div>
+      <Link to='/test'>Test Page</Link>
+    </div>
+  )
 };
-
-//<h1>Hello TS</h1>;
 
 export default App;
