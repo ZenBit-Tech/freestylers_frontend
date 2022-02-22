@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background-color: #fffe00;
+  background-color: #fff;
 `;
 
 export const Title = styled.h1`
-  color: #040404;
+  color: #fff;
 `;
