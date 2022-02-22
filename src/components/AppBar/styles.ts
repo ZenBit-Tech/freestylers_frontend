@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "constants/index";
 
 export const Header = styled.header`
   position: fixed;
@@ -7,8 +8,8 @@ export const Header = styled.header`
   z-index: 1000;
   width: 100vw;
   padding: 2px 24px;
-  border-bottom: 1px solid rgba(76, 175, 80, 0.3);
-  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid ${colors.appBarBrd};
+  background-color: ${colors.appBarBgr};
 `;
 
 export const NavigationContainer = styled.nav`
@@ -20,13 +21,13 @@ export const NavigationContainer = styled.nav`
     margin: 0 8px;
     font-weight: 400;
     font-size: 14px;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
   }
   .navLink.active {
-    color: var(--brand-color);
+    color: ${colors.brandColor};
   }
   .navLink:hover {
-    color: var(--brand-color);
+    color: ${colors.brandColor};
   }
   .navLink::after,
   .navLink.active::before {
@@ -37,7 +38,7 @@ export const NavigationContainer = styled.nav`
     display: block;
     width: 100%;
     height: 2px;
-    background-color: var(--brand-color);
+    background-color: ${colors.brandColor};
   }
   .navLink::after {
     transform: scaleX(0);
@@ -54,9 +55,9 @@ export const Logo = styled.div`
     margin-right: 24px;
     font-weight: 700;
     font-size: 24px;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
     span {
-      color: var(--brand-color);
+      color: ${colors.brandColor};
     }
   }
 `;

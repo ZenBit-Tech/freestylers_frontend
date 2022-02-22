@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Form, Input, Button } from 'antd';
-import {FormValues} from './prors';
+import {FormValues} from './props';
 import 'antd/dist/antd.css';
 import {
   Wrapper,
@@ -14,9 +14,9 @@ import {
 
 const SignUpForm: React.FC = () => {
   const [form] = Form.useForm();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const memoDisabled = useMemo(() => !email || !password, [email, password]);
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const memoDisabled = useMemo<boolean>(() => !email || !password, [email, password]);
 
   const onChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = evt.currentTarget;

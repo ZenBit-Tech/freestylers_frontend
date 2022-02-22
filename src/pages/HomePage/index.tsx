@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AppBar from "../../components/AppBar";
-import SignUpForm from "../../components/SignUpForm/index";
+import AppBar from "components/AppBar";
+import SignUpForm from "components/SignUpForm/index";
 import { HomeContainer, HomeTitle, TitleContainer, Slogan } from "./styles";
 
 const HomePage: React.FC = () => {

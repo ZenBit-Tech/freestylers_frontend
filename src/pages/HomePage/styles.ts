@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "constants/index";
 export const HomeContainer = styled.section`
   display: flex;
   @media screen and (min-width: 768px) {
@@ -9,7 +10,7 @@ export const HomeContainer = styled.section`
   flex-direction: column;
   height: 100vh;
   padding: 100px 12px;
-  background-color: #010101;
+  background-color: ${colors.homeBgr};
   background-image: url(./images/bg-image.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,12 +29,12 @@ export const HomeTitle = styled.h1`
   margin-bottom: 0;
   font-weight: 500;
   font-size: 54px;
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
 `;
 
 export const Slogan = styled.p`
   text-align: center;
   font-weight: 400;
   font-size: 14px;
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
 `;

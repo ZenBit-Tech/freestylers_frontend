@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Form, Button } from "antd";
+import { colors } from "constants/index";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -9,10 +10,10 @@ export const Wrapper = styled.div`
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #d9d9d9;
-  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid ${colors.formBrd};
+  background-color: ${colors.formWrapperBgr};
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
 `;
 export const StyledForm = styled(Form)`
 .ant-form-item {
@@ -20,7 +21,7 @@ export const StyledForm = styled(Form)`
     flex-direction: column;
     align-items: start;
     .ant-form-item-required {
-      color: rgba(255, 255, 255, 1);
+      color: #fff;
     }
     .ant-input {
       width: 300px;
@@ -36,7 +37,7 @@ export const ButtonSignIn = styled(Button)`
   padding: 4px;
   border: none;
   font-weight: 500;
-  background: var(--brand-color) !important;
+  background: ${colors.brandColor} !important;
   color: #fff;
   &[disabled] {
     background: #ccc !important;
@@ -51,7 +52,7 @@ export const ForgotPass = styled(Form.Item)`
   .ant-btn-link {
     padding: 4px 0;
     font-weight: 500;
-    color: var(--brand-color);
+    color: ${colors.brandColor};
   }
 `;
 
@@ -59,7 +60,7 @@ export const DontAccount = styled.span`
   .ant-btn {
     padding: 4px;
     font-weight: 500;
-    color: var(--brand-color);
+    color: ${colors.brandColor};
   }
 `;
 export const WithGoogle = styled.div`
@@ -82,9 +83,9 @@ export const GoogleLink = styled.a`
   width: 300px;
   height: 32px;
   padding: 4px 15px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid ${colors.formBrd};
   font-weight: 500;
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   ::before {
     content: "";
     display: inline-block;
