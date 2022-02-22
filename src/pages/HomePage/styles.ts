@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "constants/index";
+import { fonts, colors } from "constants/index";
 export const HomeContainer = styled.section`
   display: flex;
   @media screen and (min-width: 768px) {
@@ -27,14 +27,13 @@ export const TitleContainer = styled.div`
 export const HomeTitle = styled.h1`
   text-align: center;
   margin-bottom: 0;
-  font-weight: 500;
-  font-size: 54px;
-  color: #fff;
+  font-weight: ${fonts.titleFontWeight};
+  font-size: ${fonts.titleFontSize};
+  color: ${colors.titleColor};
 `;
 
 export const Slogan = styled.p`
   text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  color: #fff;
+  font-size: ${fonts.sloganFontSize};
+  color: ${colors.sloganColor};
 `;

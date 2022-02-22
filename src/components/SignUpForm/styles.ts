@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Form, Button } from "antd";
-import { colors } from "constants/index";
+import { fonts, colors } from "constants/index";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -10,10 +10,9 @@ export const Wrapper = styled.div`
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid ${colors.formBrd};
+  border: 1px solid ${colors.signUpForm};
   background-color: ${colors.formWrapperBgr};
-  font-weight: 400;
-  color: #fff;
+  color: ${colors.signUpFormColor};
 `;
 export const StyledForm = styled(Form)`
 .ant-form-item {
@@ -21,7 +20,7 @@ export const StyledForm = styled(Form)`
     flex-direction: column;
     align-items: start;
     .ant-form-item-required {
-      color: #fff;
+      color: ${colors.signUpFormColor};
     }
     .ant-input {
       width: 300px;
@@ -36,9 +35,9 @@ export const ButtonSignIn = styled(Button)`
   width: 300px;
   padding: 4px;
   border: none;
-  font-weight: 500;
+  font-weight: ${fonts.signUpButtonsFontWeight};
   background: ${colors.brandColor} !important;
-  color: #fff;
+  color: ${colors.signUpFormColor};
   &[disabled] {
     background: #ccc !important;
   }
@@ -51,7 +50,7 @@ export const ForgotPass = styled(Form.Item)`
   }
   .ant-btn-link {
     padding: 4px 0;
-    font-weight: 500;
+    font-weight: ${fonts.signUpButtonsFontWeight};
     color: ${colors.brandColor};
   }
 `;
@@ -59,7 +58,7 @@ export const ForgotPass = styled(Form.Item)`
 export const DontAccount = styled.span`
   .ant-btn {
     padding: 4px;
-    font-weight: 500;
+    font-weight: ${fonts.signUpButtonsFontWeight};
     color: ${colors.brandColor};
   }
 `;
@@ -72,7 +71,7 @@ export const WithGoogle = styled.div`
 
   .ant-btn-default {
     width: 300px;
-    font-weight: 500;
+    font-weight: ${fonts.signUpButtonsFontWeight};
   }
 `;
 export const GoogleLink = styled.a`
@@ -84,8 +83,8 @@ export const GoogleLink = styled.a`
   height: 32px;
   padding: 4px 15px;
   border: 1px solid ${colors.formBrd};
-  font-weight: 500;
-  color: #fff;
+  font-weight: ${fonts.signUpButtonsFontWeight};
+  color: ${colors.signUpFormColor};
   ::before {
     content: "";
     display: inline-block;

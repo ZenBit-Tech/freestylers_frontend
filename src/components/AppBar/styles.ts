@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "constants/index";
+import { fonts, colors } from "constants/index";
 
 export const Header = styled.header`
   position: fixed;
@@ -19,9 +19,8 @@ export const NavigationContainer = styled.nav`
     position: relative;
     padding: 2px 0;
     margin: 0 8px;
-    font-weight: 400;
-    font-size: 14px;
-    color: #fff;
+    font-size: ${fonts.navFontSize};
+    color: ${colors.navColor};
   }
   .navLink.active {
     color: ${colors.brandColor};
@@ -53,9 +52,9 @@ export const NavigationContainer = styled.nav`
 export const Logo = styled.div`
   .logoLink {
     margin-right: 24px;
-    font-weight: 700;
-    font-size: 24px;
-    color: #fff;
+    font-weight: ${fonts.logoFontWeight};
+    font-size: ${fonts.logoFontSize};
+    color: ${colors.navColor};
     span {
       color: ${colors.brandColor};
     }
