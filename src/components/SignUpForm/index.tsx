@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Form, Input, Button } from 'antd';
 import {FormValues} from './props';
-import 'antd/dist/antd.css';
 import {
   Wrapper,
   DontAccount,
