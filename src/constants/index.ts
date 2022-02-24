@@ -20,9 +20,12 @@ export const colors: Colors = {
 };
 
 export const fonts: Fonts = {
+  logoFontFamily: "Dodger",
+  logoFontSize: "30px",
+  logoFontSizePrime: "22px",
+  logoLineHeight: "1.1",
   navFontSize: "14px",
-  logoFontSize: "24px",
-  logoFontWeight: "700",
+  logoFontWeight: "400",
   signUpButtonsFontWeight: "500",
   titleFontWeight: "700",
   titleFontSize: "54px",

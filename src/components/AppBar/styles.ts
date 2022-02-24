@@ -52,11 +52,14 @@ export const NavigationContainer = styled.nav`
 export const Logo = styled.div`
   .logoLink {
     margin-right: 24px;
+    font-family: ${fonts.logoFontFamily};
     font-weight: ${fonts.logoFontWeight};
-    font-size: ${fonts.logoFontSize};
+    font-size: ${fonts.logoFontSizePrime};
+    line-height: ${fonts.logoLineHeight};
     color: ${colors.navColor};
     span {
       color: ${colors.brandColor};
+      font-size: ${fonts.logoFontSize};
     }
   }
 `;

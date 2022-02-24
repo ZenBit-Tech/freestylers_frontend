@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Form, Input, Button } from 'antd';
+import { Form, Input } from 'antd';
 import {FormValues} from './props';
 import {
   Wrapper,
@@ -9,6 +9,7 @@ import {
   StyledForm,
   ForgotPass,
   ButtonSignIn,
+  StyledNavLink
 } from './styles';
 
 const SignUpForm: React.FC = () => {
@@ -84,13 +85,11 @@ const SignUpForm: React.FC = () => {
               onChange={onChange}
             />
           </Form.Item>
+          
           <ForgotPass>
-            <Button
-              type="link"
-              onClick={e => console.log('Forgot your password?')}
-            >
+            <StyledNavLink to="/test">
               Forgot your password?
-            </Button>
+            </StyledNavLink>
           </ForgotPass>
           <Form.Item>
             <ButtonSignIn
@@ -104,11 +103,13 @@ const SignUpForm: React.FC = () => {
         </StyledForm>
         <DontAccount>
           Don't have an account yet?
-          <Button type="link">Register now</Button>
+          <StyledNavLink to="/test" className="styled">
+              Register now
+            </StyledNavLink>
         </DontAccount>
         <WithGoogle>
-          <p>Sign with</p>
-          <GoogleLink href="http://........./auth/google">
+          <p>Sign in with</p>
+          <GoogleLink href="https:/................./auth/google">
             Google
           </GoogleLink>
         </WithGoogle>
