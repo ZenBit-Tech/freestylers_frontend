@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Form, Button } from "antd";
+import { NavLink } from "react-router-dom";
 import { fonts, colors } from "constants/index";
 
 export const Wrapper = styled.div`
@@ -39,8 +40,17 @@ export const ButtonSignIn = styled(Button)`
   background: ${colors.brandColor} !important;
   color: ${colors.signUpFormColor};
   &[disabled] {
-    background: #ccc !important;
+    background: ${colors.brandColor} !important;
+    color: ${colors.signUpFormColor} !important;
   }
+`;
+
+export const StyledNavLink = styled(NavLink)`
+  :hover {
+    color: ${colors.brandColor};
+  }
+  font-weight: ${fonts.signUpButtonsFontWeight};
+  color: ${colors.brandColor};
 `;
 
 export const ForgotPass = styled(Form.Item)`
@@ -48,18 +58,11 @@ export const ForgotPass = styled(Form.Item)`
     display: flex;
     justify-content: flex-end;
   }
-  .ant-btn-link {
-    padding: 4px 0;
-    font-weight: ${fonts.signUpButtonsFontWeight};
-    color: ${colors.brandColor};
-  }
 `;
 
 export const DontAccount = styled.span`
-  .ant-btn {
-    padding: 4px;
-    font-weight: ${fonts.signUpButtonsFontWeight};
-    color: ${colors.brandColor};
+  .styled {
+    margin-left: 4px;
   }
 `;
 export const WithGoogle = styled.div`
@@ -85,6 +88,9 @@ export const GoogleLink = styled.a`
   border: 1px solid ${colors.formBrd};
   font-weight: ${fonts.signUpButtonsFontWeight};
   color: ${colors.signUpFormColor};
+  :hover {
+    color: ${colors.brandColor};
+  }
   ::before {
     content: "";
     display: inline-block;
